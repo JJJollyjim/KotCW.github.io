@@ -1,133 +1,178 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<!-- Banner -->
+<section id="banner">
+
+    <!--
+      ".inner" is set up as an inline-block so it automatically expands
+      in both directions to fit whatever's inside it. This means it won't
+      automatically wrap lines, so be sure to use line breaks where
+      appropriate (<br />).
+    -->
+    <div class="inner">
+
+        <header>
+            <h2>Kult of the Cyber Witch</h2>
+        </header>
+        <p id="hexOfTheDay"></p>
+
+        <script type="text/javascript">
+            var hex = '#' + (Math.random() * 0xFFFFFF << 0).toString(16).toUpperCase();
+            document.getElementById("hexOfTheDay").innerHTML = 'The hex of the day is ' + hex;
+            document.getElementById("hexOfTheDay").style.color = hex;
+        </script>
+        <footer>
+            <ul class="buttons vertical">
+                <li><a href="#main" class="button fit scrolly"><i class="fas fa-ghost"></i> ~SPOOKY~ <i
+                        class="fas fa-ghost"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+</section><html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About Kult of the Cyber Witch</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="description" content=""/>
-    <meta name="author" content="Kult of the Cyber Witch"/>
+    <meta name="keywords" content=""/>
+    <!--[if lte IE 8]>
+    <script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <link rel="stylesheet" href="/css/pygment.css"/>
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/style-noscript.css"/>
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet"
+          type="text/css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/ie/v8.css"/><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/css/ie/v9.css"/><![endif]-->
 
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC|Open+Sans" rel="stylesheet">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://kultofthecyberwitch.org/theme/css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="https://kultofthecyberwitch.org/theme/css/icomoon.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="https://kultofthecyberwitch.org/theme/css/bootstrap.css">
-    <!-- Flexslider  -->
-    <link rel="stylesheet" href="https://kultofthecyberwitch.org/theme/css/flexslider.css">
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="https://kultofthecyberwitch.org/theme/css/style.css">
-    <!-- Custom style  -->
-    <link rel="stylesheet" href="https://kultofthecyberwitch.org/theme/css/custom.css">
-    <!-- pygments code highlight -->
-    <link rel="stylesheet" href="https://kultofthecyberwitch.org/theme/css/pygments.css">
-    <!-- tipue search -->
-    <link rel="stylesheet" href="https://kultofthecyberwitch.org/theme/tipuesearch/css/tipuesearch.css">
-
-    <!-- Modernizr JS -->
-    <script src="https://kultofthecyberwitch.org/theme/js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="/theme/js/respond.min.js"></script>
-    <![endif]-->
-    <link href="https://kultofthecyberwitch.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-          title="Kult of the Cyber Witch Atom">
-
-
+    <title>Kult of the Cyber Witch </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
 </head>
-<body>
-<div id="fh5co-page">
-    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-    <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
-        <nav class="fh5co-main-menu" role="navigation">
-        </nav>
-        <div class="clearfix"></div>
-        <h1 id="fh5co-logo">
-            <a href="https://kultofthecyberwitch.org/index.html">
-                <img src="https://kultofthecyberwitch.org\theme\images\logo.png"/>
-            </a>
-        </h1>
-        <nav class="fh5co-main-menu" role="navigation">
-<ul>
-    <!-- home link -->
-    <li><a href="https://kultofthecyberwitch.org/">Home</a></li>
+<body class="index loading">
 
-    <!-- page links -->
-            <li><a href="https://kultofthecyberwitch.org/code-of-conduct.html">Code of Conduct</a></li>
+<!-- Header -->
+<header id="header"  class="alt" >
+    <h1 class="logo">
+        <a href="https://kultofthecyberwitch.org">Kult of the Cyber Witch</a>
+    </h1>
+    <nav id="nav">
+        <ul>
+            <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
             <li><a href="https://kultofthecyberwitch.org/conjure-an-administrator.html">Conjure an Administrator</a></li>
-            <li><a href="https://kultofthecyberwitch.org/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="https://kultofthecyberwitch.org/contribute-to-the-kult.html">Contribute to the Kult</a></li>
 
-    <!-- categories -->
+<!--            <li class="submenu">
+                <a href="https://kultofthecyberwitch.org/">Blog</a>
+                <ul>
+                </ul>
+            </li>-->
+        </ul>
+    </nav>
+</header>
 
-    <!-- tags -->
+<!-- Main -->
+<article id="main">
 
-    <!-- additional menu items from config -->
+  <header class="special container">
+    <span class="icon fas fa-cloud-moon"></span>
+    <h2>Kult of the Cyber Witch is a holistic information security and culture zine that is super SpooOoOooOOopy.</h2>
+    <p>Our publication centers on people of marginalised genders and sexes experiences within the Oceania region.
 
-</ul>        </nav>
+      We welcome all readers and contributors, whether you have been doing information security ~things~ for years,
+      are just starting out, are a curious weekend dabbler, or self-taught part-timer.
 
-<ul id="social">
-</ul>
-    </aside>
+      We cover a variety of topics including social and technical problems we face, as well as works of fiction and
+      things that are just generally witchy.</p>
+  </header>
 
-    <div id="fh5co-main">
+  <!-- One -->
+  <section class="wrapper style2 container special-alt">
+    <div class="row half">
+      <div class="8u">
+        <header>
+          <h2>Behold the <strong>wonder</strong> that is contributing to Kult of the Cyber Witch.</h2>
+        </header>
+        <footer>
+          <ul class="buttons">
+            <li><a href="https://kultofthecyberwitch.org/contribute-to-the-kult.html" class="button">Find Out More</a></li>
+          </ul>
+        </footer>
 
-    <div class="fh5co-narrow-content page-content">
-        <h1 class="fh5co-heading-colored"><i class=""></i> About Kult of the Cyber Witch</h1>
-        <div class="animate-box" data-animate-effect="fadeInLeft">
-            <p class="animate-box " data-animate-effect="fadeInLeft"><p>Kult of the Cyber Witch is a holistic information security zine that centres on cis and trans women and genderqueer/non-binary 
-individuals' experiences and voices within the Oceania region. </p>
-<p>We welcome all readers and contributors, whether you have been in the Information Security industry for years, are just 
-starting out, are a curious weekend dabbler, or self-taught part-timer. </p>
-<p>We aim to cover a variety of topics including social and technical problems we face, as well as works of fiction. </p>
-<ul>
-<li>If following questions call to you, you too might be a Cyber Witch and will enjoy this zine! </li>
-<li>Do you find yourself invoking the spirits via Console?</li>
-<li>Do you use pipe /dev/null as a banishing spell?</li>
-<li>When a spell or ritual isn't working right, do you conjure the likes of Google, DuckDuckGo or Stack Overflow?</li>
-<li>Does your smart phone double up as a candle used during spells and rituals?</li>
-<li>Is your familiar a mouse?</li>
-<li>Do you use Snort or Wireshark for divination?</li>
-<li>Do you find yourself reviewing CVEs and the latest security issues as part of your regular warding process?</li>
-<li>Do you find yourself accessing the astral plane via Chrome, Brave, or Firefox?</li>
-<li>Do you consecrate your computer regularly with security patches and updates?</li>
-<li>Do you carve, etch, or mark your devices with protective sigils?</li>
-</ul></p>
+      </div>
+      <div class="4u skel-cell-important">
+        <ul class="feature-icons">
+          <li><span class="icon fas fa-cat"><span class="label">Black cat icon</span></span></li>
+          <li><span class="icon fas fa-book-dead"><span class="label">Book with skull and cross bones on the cover</span></span></li>
+          <li><span class="icon fas fa-book-dead" style="visibility: hidden;"></span></li>
+          <li><span class="icon fas fa-ghost"><span class="label">Ghost</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</article>
+
+<!-- Three -->
+<section class="wrapper style3 container special">
+
+    <header class="major">
+        <h2><i class="fas fa-book-dead"></i><strong> previous issues </strong><i class="fas fa-book-dead"></i></h2>
+    </header>
+    <div class="row">
+        <div class="6u">
+
+            <section>
+                <a href="javascript:void(0)" aria-disabled="true" class="image feature"><img src="images/pic01.jpg" alt="Image Placeholder"/>~Preview Coming Soon~</a>
+                <header>
+                    <h3>Issue One</h3>
+                    <sub>Released: 15th November 2018</sub>
+                </header>
+                <p>Our flagship issue! Limited physical copies will be available at PurpleCon NZ or you can pay what you
+                    want for a digital copy on itch.io.
+                <ul class="buttons">
+                    <li><a href="javascript:void(0)" aria-disabled="true" class="button disabled">Still Brewing!</a></li>
+                </ul>
+            </section>
+
         </div>
     </div>
+</section><!-- CTA -->
+<section id="cta">
 
+    <header>
+        <h2>Ready to join us in <strong>ritual</strong>?</h2>
+    </header>
+    <footer>
+        <ul class="buttons">
+            <li><a href="https://kultofthecyberwitch.org/conjure-an-administrator.html" class="button special"><i class="fas fa-broom"></i> Request an Invite</a></li>
+            <li><a href="https://kultofthecyberwitch.org/so-youre-still-unsure-about-joining.html" class="button"><i class="fas fa-skull-crossbones"></i>I still don't know</a></li>
+        </ul>
+    </footer>
 
-<div class="fh5co-footer">
-    <p><small>&copy; 2016 Blend Free HTML5. All Rights Reserved.</span> <span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a></span>
-    <br /><span>Pelican Theme by: <a href="https://github.com/claudio-walser/pelican-fh5co-marble" target="_blank">Claudio Walser</a></span></small></p>
-</div>    </div>
-</div>
+</section>
 
-<!-- jQuery -->
-<script src="https://kultofthecyberwitch.org/theme/js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="https://kultofthecyberwitch.org/theme/js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="https://kultofthecyberwitch.org/theme/js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="https://kultofthecyberwitch.org/theme/js/jquery.waypoints.min.js"></script>
-<!-- Flexslider -->
-<script src="https://kultofthecyberwitch.org/theme/js/jquery.flexslider-min.js"></script>
+<!-- Footer -->
+<footer id="footer">
 
+    <ul class="icons">
+    </ul>
 
-<!-- MAIN JS -->
-<script src="https://kultofthecyberwitch.org/theme/js/main.js"></script>
+    <span class="copyright"><a href="https://kultofthecyberwitch.org/privacy-policy.html">Privacy Policy</a> | <a
+            href="https://kultofthecyberwitch.org/code-of-conduct.html">Code of Conduct</a> | <a
+            href="https://kultofthecyberwitch.org/credits.html">Credits</a> </span>
+    <br><span class="copyright">&copy; Kult of the Cyber Witch. All rights reserved.
+        <br>Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+
+</footer>
 </body>
 </html>
